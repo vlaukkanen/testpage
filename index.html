@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Business</title>
+<style>
+*{box-sizing:border-box;margin:0}
+body{font-family:system-ui,sans-serif;color:#1f2937;line-height:1.6}
+header{background:linear-gradient(135deg,#4f46e5,#7c3aed);color:#fff;text-align:center;padding:4rem 1.5rem}
+h1{font-size:2.2rem;margin-bottom:.5rem}
+.btn{display:inline-block;margin-top:1.5rem;background:#fff;color:#4f46e5;padding:.8rem 1.6rem;border-radius:999px;text-decoration:none;font-weight:600}
+section{max-width:900px;margin:auto;padding:3rem 1.5rem}
+h2{text-align:center;margin-bottom:1.5rem}
+.grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.card{background:#f3f4f6;border-radius:12px;padding:1.5rem}
+form{display:grid;gap:.8rem;max-width:500px;margin:auto}
+input,textarea{padding:.8rem;border:1px solid #d1d5db;border-radius:8px;font:inherit}
+button{background:#4f46e5;color:#fff;border:0;padding:.8rem;border-radius:8px;font:inherit;cursor:pointer}
+footer{text-align:center;padding:2rem;color:#6b7280}
+</style>
+</head>
+<body>
+<header>
+  <h1>Your Business Name</h1>
+  <p>A short sentence about what you do and why it matters.</p>
+  <a class="btn" href="#contact">Get in touch</a>
+</header>
+<section>
+  <h2>What we offer</h2>
+  <div class="grid">
+    <div class="card"><h3>Service One</h3><p>Describe your first service here.</p></div>
+    <div class="card"><h3>Service Two</h3><p>Describe your second service here.</p></div>
+    <div class="card"><h3>Service Three</h3><p>Describe your third service here.</p></div>
+  </div>
+</section>
+<section id="contact">
+  <h2>Contact us</h2>
+  <form onsubmit="event.preventDefault();alert('Thanks! (demo form)')">
+    <input placeholder="Your name" required>
+    <input type="email" placeholder="Email" required>
+    <textarea rows="4" placeholder="Message" required></textarea>
+    <button>Send</button>
+  </form>
+</section>
+<footer>© 2026 Your Business</footer>
+</body>
+</html>
